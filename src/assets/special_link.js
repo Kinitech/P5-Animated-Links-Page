@@ -1,6 +1,6 @@
-import photo1 from "./pinned/1.jpeg"
+import photo1 from "./pinned/1.png"
 import photo2 from "./pinned/2.png"
-import photo3 from "./pinned/3.webp"
+import photo3 from "./pinned/3.png"
 import insta from "./socials/ig.png";
 
 const special_link = [{

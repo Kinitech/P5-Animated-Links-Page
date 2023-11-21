@@ -6,7 +6,7 @@ import Box from './components/Box'
 import Desc from "./components/Description";
 import PhotoCard from "./components/PhotoCard";
 
-import avatar from "./assets/icons/pfp.jpeg";
+import avatar from "./assets/icons/pfp.png";
 import main_links from './assets/main_links'
 import social_links from "./assets/social_links";
 import special_link from "./assets/special_link";
