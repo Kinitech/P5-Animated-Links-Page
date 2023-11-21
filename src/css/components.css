@@ -1,0 +1,235 @@
+body[data-theme='dark'] {
+  --font-color: rgb(240, 240, 240);
+  --p-font-color: rgb(200, 200, 200);
+
+  --background-color: rgba(204, 204, 204, 0.25);
+  --background-hover-color: rgba(204, 204, 204, 0.12);
+  --heading-font: "Trebuchet MS";
+  --desc-font: "Courier New";
+  --card-font:  "Trebuchet MS";
+  background-color: rgba(0, 0, 0, 0.9)
+}
+
+
+.Header {
+  padding: 2%;
+  font-weight: 600;
+  color: var(--font-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--heading-font);
+}
+
+.Header__inner {
+  display: flex;
+}
+
+.center {
+  margin: auto;
+}
+
+.Desc {
+  font-family: var(--desc-font);
+  padding: 2%;
+  font-weight: 200;
+  color: var(--font-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.pfp {
+  border-radius: 75%;
+}
+
+.circle {
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  pointer-events: none;
+}
+
+.Box{
+  transition: background-color 0.3s ease-in-out,
+              color 0.5s ease-in-out;
+  pointer-events: all;
+  user-select: none;
+  color: var(--font-color);
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  display:flex;
+  background-color: var(--background-color);
+  font-family: var(--card-font)
+}
+.Box:hover {
+  background-color: var(--background-hover-color);
+  color: #77eae6;
+}
+
+.Dropdown {
+  transition: background-color 0.3s ease-in-out,
+  color 0.5s ease-in-out,
+  padding-bottom 0.5s ease-in-out;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height:50px;
+}
+
+.dropped {
+  padding-bottom:86px;
+  margin-bottom:-86px;
+}
+.Dropdown h6 {
+  pointer-events: none;
+}
+
+.react-p5 {
+  filter: blur(15px); /* Adjust this value to change the blur amount */
+}
+
+.dot-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1.5px, transparent 1.5px);
+  background-size: 3px 3px;
+  pointer-events: none;
+}
+
+.christmas {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.christmas:hover {
+  background-color: var(--background-hover-color);
+  -webkit-text-fill-color: rgba(119, 234, 230, 0.71);
+}
+
+@keyframes snowflake-fall {
+  to {
+    top: 220%;
+  }
+}
+
+.icon{
+  width:50px;
+  height:50px;
+}
+
+.block{
+  display:block;
+  margin: 27px auto 0;
+}
+
+.leftSide{
+  margin-top: 27px;
+  margin-left: auto;
+}
+
+.rightSide{
+  height:160px;
+}
+
+.marginBottom{
+  margin-bottom: 16px;
+}
+
+.inline{
+  display:inline-block;
+}
+.shake{
+  animation: shake 10s infinite;
+}
+@keyframes shake {
+  0%  { transform: translate(2px, 1px)   rotate(0deg);  }
+  10% { transform: translate(-1px, -2px) rotate(-2deg); }
+  20% { transform: translate(-3px, 0px)  rotate(3deg);  }
+  30% { transform: translate(0px, 2px)   rotate(0deg);  }
+  40% { transform: translate(1px, -1px)  rotate(1deg);  }
+  50% { transform: translate(-1px, 2px)  rotate(-1deg); }
+  60% { transform: translate(-3px, 1px)  rotate(0deg);  }
+  70% { transform: translate(2px, 1px)   rotate(-2deg); }
+  80% { transform: translate(-1px, -1px) rotate(4deg);  }
+  90% { transform: translate(2px, 2px)   rotate(0deg);  }
+  100%{ transform: translate(2px, 1px)  rotate(0deg); }
+}
+
+.shake2{
+  animation: shake2 11s infinite;
+}
+@keyframes shake2 {
+  0% { transform: translate(-1px, 2px)  rotate(-1deg); }
+  10% { transform: translate(-3px, 1px)  rotate(0deg);  }
+  20% { transform: translate(2px, 1px)   rotate(-2deg); }
+  30% { transform: translate(-1px, -1px) rotate(4deg);  }
+  40% { transform: translate(2px, 2px)   rotate(0deg);  }
+  50%{ transform: translate(2px, 1px)  rotate(0deg); }
+  60%  { transform: translate(2px, 1px)   rotate(0deg);  }
+  70% { transform: translate(-1px, -2px) rotate(-2deg); }
+  80% { transform: translate(-3px, 0px)  rotate(3deg);  }
+  90% { transform: translate(0px, 2px)   rotate(0deg);  }
+  100% { transform: translate(-1px, 2px)  rotate(0deg);  }
+}
+
+.wobble{
+  animation: wobble 20s infinite;
+}
+@keyframes wobble {
+  0% { transform: translate(0px, 0px)}
+  5% { transform: translate(0px, 1px)}
+  10% { transform: translate(0px, 2px)}
+  15% { transform: translate(0px, 3px)}
+  20% { transform: translate(0px, 2px)}
+  25%{ transform: translate(0px, 1px)  rotate(1deg); }
+  30%  { transform: translate(0px, 0px)}
+  35% { transform: translate(0px, -1px)}
+  40% { transform: translate(0px, -2px)}
+  45% { transform: translate(0px, -3px)}
+  50% { transform: translate(0px, -2px) rotate(0deg)}
+  55% { transform: translate(0px, -1px)}
+  60% { transform: translate(0px, 0px)}
+  65% { transform: translate(0px, 1px)}
+  70% { transform: translate(0px, 2px) rotate(1deg); }
+  75%{ transform: translate(0px, 3px)}
+  80%  { transform: translate(0px, 2px)}
+  85% { transform: translate(0px, 1px)}
+  90% { transform: translate(0px, 0px) rotate(0deg)}
+}
+
+.emptySpace{
+  height:200px;
+}
+
+p {
+  font-size: 80%;
+  font-weight: 400;
+  color: var(--p-font-color);
+}
