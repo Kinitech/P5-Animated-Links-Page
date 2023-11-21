@@ -9,6 +9,7 @@ It also has various different types of buttons for links:
 - Buttons in both grid and list format.
 - Animated buttons for events like sales.
 - Dropdown buttons for additional options.
+
 There are various animations to make the site lively, such as swaying subheaders and hover effects.
 
 Made by Byron!
